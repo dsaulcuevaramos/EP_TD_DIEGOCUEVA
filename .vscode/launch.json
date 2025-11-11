@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Msv1Application<msv1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.examen.msv1.Msv1Application",
+            "projectName": "msv1",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Msv4Application<msv4>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.examen.msv4.Msv4Application",
+            "projectName": "msv4",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Msv2Application<msv2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.examen.msv2.Msv2Application",
+            "projectName": "msv2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
