@@ -1,0 +1,10 @@
+PARA MYSQL - MS_MOVIMIENTO
+http://localhost:85/api/v1/movimiento/{value}
+
+PARA POSTGRES - MS_ARTICULO
+http://localhost:85/api/v2/articulo/{value}
+
+PARA MONGODB - SEGURIDAD
+http://localhost:85/api/v4/seguridad/{nombre,clave}
+
+

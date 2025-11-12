@@ -1283,3 +1283,35 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2025-11-11T18:53:17.438-05:00  INFO 26264 --- [msv2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-11T18:53:17.449-05:00  INFO 26264 --- [msv2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-11-11T18:53:17.459-05:00  INFO 26264 --- [msv2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-11T19:08:11.035-05:00  INFO 20116 --- [msv2] [main] com.examen.msv2.Msv2Application          : Starting Msv2Application using Java 21.0.8 with PID 20116 (C:\Users\dsaul\OneDrive\Desktop\EP-TD-DIEGO-CUEVA\EP_TD_DIEGOCUEVA\msv2\target\classes started by dsaul in C:\Users\dsaul\OneDrive\Desktop\EP-TD-DIEGO-CUEVA\EP_TD_DIEGOCUEVA\msv2)
+2025-11-11T19:08:11.040-05:00 DEBUG 20116 --- [msv2] [main] com.examen.msv2.Msv2Application          : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-11T19:08:11.042-05:00  INFO 20116 --- [msv2] [main] com.examen.msv2.Msv2Application          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T19:08:12.539-05:00  INFO 20116 --- [msv2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T19:08:12.667-05:00  INFO 20116 --- [msv2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+2025-11-11T19:08:13.755-05:00  INFO 20116 --- [msv2] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 86 (http)
+2025-11-11T19:08:13.802-05:00  INFO 20116 --- [msv2] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T19:08:13.803-05:00  INFO 20116 --- [msv2] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-11T19:08:13.939-05:00  INFO 20116 --- [msv2] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T19:08:13.941-05:00  INFO 20116 --- [msv2] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2802 ms
+2025-11-11T19:08:14.345-05:00  INFO 20116 --- [msv2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T19:08:14.682-05:00  INFO 20116 --- [msv2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bb9ca38
+2025-11-11T19:08:14.687-05:00  INFO 20116 --- [msv2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T19:08:14.796-05:00  INFO 20116 --- [msv2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T19:08:14.971-05:00  INFO 20116 --- [msv2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-11T19:08:15.044-05:00  INFO 20116 --- [msv2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T19:08:15.725-05:00  INFO 20116 --- [msv2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T19:08:15.940-05:00  INFO 20116 --- [msv2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11T19:08:17.248-05:00  INFO 20116 --- [msv2] [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.examen.msv2.entity.articulo (class must be instantiated by Interceptor)
+2025-11-11T19:08:17.564-05:00  INFO 20116 --- [msv2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T19:08:17.572-05:00  INFO 20116 --- [msv2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T19:08:18.002-05:00  WARN 20116 --- [msv2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T19:08:18.914-05:00  INFO 20116 --- [msv2] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 86 (http) with context path '/'
+2025-11-11T19:08:18.932-05:00  INFO 20116 --- [msv2] [main] com.examen.msv2.Msv2Application          : Started Msv2Application in 8.872 seconds (process running for 10.209)
+2025-11-11T19:55:51.773-05:00  WARN 20116 --- [msv2] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m6s957ms612µs300ns).

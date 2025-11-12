@@ -1,0 +1,19 @@
+version: "1"
+
+services:   
+  mongo:
+    image: mongo:5.0.2  
+    container_name: database-mongo
+    restart: always
+    environment:
+    - MONGO_INITDB_ROOT_USERNAME=admin
+    - MONGO_INITDB_ROOT_PASSWORD=Unu#2025
+    ports:
+    - 27019:27017
+    networks:
+    - td2023 
+    
+networks:
+  td2023:
+    name: ms-unu
+
