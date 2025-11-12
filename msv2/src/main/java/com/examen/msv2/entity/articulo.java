@@ -14,22 +14,20 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-@Table(name = "cliente")
-public class cliente {
+@Table(name = "articulo")
+public class articulo {
+    
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_cliente")
+    @Column(name = "idArticulo")
     private int id_cliente;
 
     @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "email")
-    private String email;
+    @Column(name = "precio")
+    private int email;
 
-    @Column(name = "telefono")
-    private String telefono;
-    
 
 }

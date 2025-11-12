@@ -8,7 +8,8 @@
             "mainClass": "com.examen.msv1.Msv1Application",
             "projectName": "msv1",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58188 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=msv1"
         },
         {
             "type": "java",
@@ -18,7 +19,8 @@
             "mainClass": "com.examen.msv4.Msv4Application",
             "projectName": "msv4",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60850 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=msv4"
         },
         {
             "type": "java",
@@ -27,6 +29,17 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.examen.msv2.Msv2Application",
             "projectName": "msv2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49315 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=msv2"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Msv3Application<msv3>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.examen.msv3.Msv3Application",
+            "projectName": "msv3",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
