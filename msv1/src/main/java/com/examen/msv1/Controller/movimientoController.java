@@ -27,10 +27,10 @@ public class movimientoController {
 
 
     @GetMapping(ApiRoutes.Movimiento.GET_ALL)
-    public ResponseEntity<?> getAllUsuarios() {
+    public ResponseEntity<?> getAll() {
         try {
             List<movimiento> movimoentos = movimientoService.obtener();
-            logger.info("Usuarios obtenidos exitosamente, total: {}", movimoentos.size());
+            logger.info("movimoentos obtenidos exitosamente, total: {}", movimoentos.size());
             return ResponseEntity.ok(movimoentos);
         } catch (Exception ex) {
             logger.error("Error al obtener movimientos: {}", ex.getMessage(), ex);

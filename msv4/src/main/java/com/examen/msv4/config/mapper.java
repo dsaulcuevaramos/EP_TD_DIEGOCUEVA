@@ -6,8 +6,8 @@ public class mapper {
 
     public static class Seguridad {
         public static final String SEGURIDAD_BASE = BASE_URL + "/seguridad";
-        public static final String LOGINNC = SEGURIDAD_BASE + "/{nombre, clave}";
-        public static final String LOGIN2 = SEGURIDAD_BASE + "/L/{nombre, clave}";
+        public static final String LOGIN = SEGURIDAD_BASE + "/{nombre}/{clave}";
+        public static final String GET_ALL = SEGURIDAD_BASE;
     }
 
 }

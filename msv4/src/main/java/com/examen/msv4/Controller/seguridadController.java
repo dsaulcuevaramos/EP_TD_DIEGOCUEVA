@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.examen.msv4.config.mapper;
 import com.examen.msv4.entity.seguridad;
 import com.examen.msv4.service.seguridadService;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
@@ -25,7 +24,7 @@ public class seguridadController {
 
     private static final Logger logger = LoggerFactory.getLogger(seguridadController.class);
 
-
+/*
     @GetMapping(mapper.Seguridad.LOGINNC)
     public ResponseEntity<?> loginByNombreClave(@PathVariable String nombre, @PathVariable String clave) {
         try {
@@ -42,14 +41,8 @@ public class seguridadController {
             return ResponseEntity.status(500).body("Error interno del servidor");
         }
     }
-
-    @GetMapping("path")
-    public ResponseEntity<?> login(@RequestParam String param) {
-        return null;
-    }
-    
-
-    @GetMapping("path")
+*/
+    @GetMapping(mapper.Seguridad.LOGIN)
     public ResponseEntity<?> login(@PathVariable String nombre, @PathVariable String clave){
         try {
             List<seguridad> nombres = SeguridadService.getByNombre(nombre);
@@ -72,6 +65,18 @@ public class seguridadController {
         } catch (Exception e) {
             logger.error("Error al obtener el usuario {}: {}", nombre, e.getMessage());
             return ResponseEntity.status(500).body("Error interno del servidor");
+        }
+    }
+
+    @GetMapping(mapper.Seguridad.GET_ALL)
+    public ResponseEntity<?> getAll() {
+        try {
+            List<seguridad> seguridads = SeguridadService.obtener();
+            logger.info("seguridads obtenidos exitosamente, total: {}", seguridads.size());
+            return ResponseEntity.ok(seguridads);
+        } catch (Exception ex) {
+            logger.error("Error al obtener seguridads: {}", ex.getMessage(), ex);
+            return ResponseEntity.internalServerError().body("Error al obtener seguridads");
         }
     }
 }

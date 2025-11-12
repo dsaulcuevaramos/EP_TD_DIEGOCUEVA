@@ -12,7 +12,7 @@ import com.examen.msv4.entity.seguridad;
 @Repository
 public interface seguridadRepository extends MongoRepository<seguridad, String>{
 
-    Optional<seguridad> loginByNombreClave(String nombre, String codigo);
+    //Optional<seguridad> loginByNombreClave(String nombre, String codigo);
     List<seguridad> findByNombre(String nombre);
     Optional<seguridad> findByClave(String clave);
     
